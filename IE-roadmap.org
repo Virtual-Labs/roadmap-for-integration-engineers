@@ -4,8 +4,6 @@
 #+Date:[2014-10-22 Wednesday] 
 #+SETUPFILE: ./org-templates/level-0.org
 
-* Roadmap for Integration Engineers
-
 ** About this Document
 
 *Objective*
@@ -161,7 +159,7 @@ and deployment such as software, hardware, platform, technologies,
 authors etc.
 
 *Step 1:* You can refer to a sample labspec created for a lab
-[[./labspec.json][here]]. The template to populate your own labspec can be found [[./labbspec-template.json][here]].
+[[./labspec.json][here]]. The template to populate your own labspec can be found [[./labspec-template.json][here]].
 
 *Step 2:* After the labspec is ready, use the OVPL kit to deploy the
 lab.  OVPL kit has the necessary documentation and scripts to perform
