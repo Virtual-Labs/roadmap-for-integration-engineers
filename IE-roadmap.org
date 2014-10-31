@@ -143,7 +143,7 @@ populates the build.  The copying process of =build= to the required
 =/var/www/= directory is also automated.
 
 A sample make file for a level 3 lab looks like [[./makefile][this]]. You can also
-refer to the tutorial on [[http://www.gnu.org/software/make/manual/make.pdf}{Understanding][How to Write Make]].
+refer to the tutorial on [[http://www.gnu.org/software/make/manual/make.pdf][How to Write Make]].
 
 *Step 2:* Upon successful completion of the process, the lab is
 deployed. Open a browser and type =container id= to see your lab.
@@ -159,7 +159,7 @@ and deployment such as software, hardware, platform, technologies,
 authors etc.
 
 *Step 1:* You can refer to a sample labspec created for a lab
-[[./labspec.json][here]]. The template to populate your own labspec can be found [[./labspec-template.json][here]].
+[[./labspec.json][here]]. The template to populate your own labspec can be found [[./labspec_template.json][here]].
 
 *Step 2:* After the labspec is ready, use the OVPL kit to deploy the
 lab.  OVPL kit has the necessary documentation and scripts to perform
