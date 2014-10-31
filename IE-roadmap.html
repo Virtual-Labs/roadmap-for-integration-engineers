@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Roadmap for Integration Engineers </title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="Roadmap for Integration Engineers "/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2014-10-22"/>
+<meta name="author" content="VLEAD Team, IIITH"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="style/css/worg-style.css" />
+<link rel="stylesheet" type="text/css" href="style/css/override.css" />
+<script type="text/javascript" src="style/js/org-info.js">
+/**
+ *
+ * @source: style/js/org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in style/js/org-info.js.
+ *
+ * Copyright (C) 2012-2013  Sebastian Rose
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in style/js/org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "1");
+org_html_manager.set("LINK_HOME", "./index.html");
+org_html_manager.set("LINK_UP", "./index.html");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "1");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+<div id="org-div-home-and-up" style="text-align:right;font-size:70%;white-space:nowrap;">
+ <a accesskey="h" href="./index.html"> UP </a>
+ |
+ <a accesskey="H" href="./index.html"> HOME </a>
+</div>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">Roadmap for Integration Engineers </h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Roadmap for Integration Engineers</a>
+<ul>
+<li><a href="#sec-1-1">1.1 About this Document</a></li>
+<li><a href="#sec-1-2">1.2 Pre-requisites</a></li>
+<li><a href="#sec-1-3">1.3 Integration levels</a></li>
+<li><a href="#sec-1-4">1.4 Transformation Process from Level 0 to Level 5</a>
+<ul>
+<li><a href="#sec-1-4-1">1.4.1 Level 0</a></li>
+<li><a href="#sec-1-4-2">1.4.2 Level 1</a></li>
+<li><a href="#sec-1-4-3">1.4.3 Level 2</a></li>
+<li><a href="#sec-1-4-4">1.4.4 Level 3</a></li>
+<li><a href="#sec-1-4-5">1.4.5 Level 4</a></li>
+<li><a href="#sec-1-4-6">1.4.6 Level 5</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-5">1.5 Timeline for deliverables</a></li>
+<li><a href="#sec-1-6">1.6 Conclusion</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 APPENDIX A - Version Control and GitHub</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Roadmap for Integration Engineers</h2>
+<div class="outline-text-2" id="text-1">
+
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> About this Document</h3>
+<div class="outline-text-3" id="text-1-1">
+
+
+<p>
+<b>Objective</b>
+</p>
+<p>
+This document provides a roadmap to the Integration Engineers of
+Virtual Labs to transform their labs sources from Integration level 0
+to Integration level 5. 
+</p>
+<p>
+This document describes the steps to be undertaken, reference
+documents and the necessary support needed by the Integration Engineers
+during the transformation process.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Pre-requisites</h3>
+<div class="outline-text-3" id="text-1-2">
+
+
+<p>
+The Integration Engineers must have access to the source
+files of their labs. They are expected to know the following:
+</p><ul>
+<li>Execute basic shell commands in CentOS 6.5
+</li>
+<li>Create and delete a container in OpenVZ virtual environment
+</li>
+<li>Create or modify an HTML page and write code in JavaScript
+</li>
+<li>Use git, a version control tool
+</li>
+</ul>
+
+
+<p>
+The Integration Engineers are expected to have the following system requirements:
+</p><ul>
+<li>Minimum 2GB RAM
+</li>
+<li>The machine should have one dedicated partition for CentOS
+      (version 6.5 only)
+</li>
+<li>Minimum 50GB hard disk space
+</li>
+<li>64-bit processor
+</li>
+<li>The machine should have a dual core processor
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Integration levels</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<p>During the integration process, the source code of the labs move
+through various levels of automation. The objective of the document is to help you
+tranform your lab sources from Level 0 to Level 5 as described below:
+</p>
+<ul>
+<li>Level 0 : Unversioned
+</li>
+<li>Level 1 : Under version control
+</li>
+<li>Level 2 : Manually built on developer's machine
+</li>
+<li>Level 3 : Build process is automated
+</li>
+<li>Level 4 : Ready with deployment specification
+</li>
+<li>Level 5 : Life cycle management
+</li>
+</ul>
+
+
+<p>
+You must document the steps taken during the integration process in
+the wiki page of your lab repository on GitHub.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Transformation Process from Level 0 to Level 5</h3>
+<div class="outline-text-3" id="text-1-4">
+
+<p>The task of an Integration Engineer is to transform the lab sources
+to level 5 from its current level. Described below is the
+process of transformation of lab sources at each level.
+</p>
+
+
+</div>
+
+<div id="outline-container-1-4-1" class="outline-4">
+<h4 id="sec-1-4-1"><span class="section-number-4">1.4.1</span> Level 0</h4>
+<div class="outline-text-4" id="text-1-4-1">
+
+<p>Your lab is at level 0 if your lab sources are unversioned. At this
+ level, the source code of your lab will look like the sample below:
+ <img src="./level-0.png"  alt="./level-0.png" />
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-4-2" class="outline-4">
+<h4 id="sec-1-4-2"><span class="section-number-4">1.4.2</span> Level 1</h4>
+<div class="outline-text-4" id="text-1-4-2">
+
+<p>The goal of level 1 is to have the source code versioned on GitHub.
+</p>
+<p>
+<b>APPENDIX A</b> covers a tutorial on version control. Along with the
+version controlled code, the source code of the lab has to be
+structured and organized as follows:
+</p>
+
+
+
+<pre class="example">- /src
+    |
+    ---- /lab
+    |
+    ---- /images
+    | 
+    ---- /exp     
+           |
+           ---- /exp1
+                  |
+                  ---- /img
+                  | 
+                  ---- /js      
+           |
+           ----  /exp2
+                   |    
+                   ---- /img
+                   |
+                   ---- /js
+    |
+    ---- /lib
+    |
+    ---- /themes
+    |
+    ---- /help
+- /scripts (if any)
+</pre>
+
+
+<p>
+Below is a sample screenshot of how a level 1 source looks like:
+<img src="./level-1.png"  alt="./level-1.png" />
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-4-3" class="outline-4">
+<h4 id="sec-1-4-3"><span class="section-number-4">1.4.3</span> Level 2</h4>
+<div class="outline-text-4" id="text-1-4-3">
+
+<p>The goal of level 2 is to manually build and deploy the lab in the
+developer environment. Before the deployment of labs, it is advisable
+to restructure your labs according to UI toolkit 1.0. 
+</p>
+<p>
+<b>Step 1:</b> Restructure the source code of your lab as per UI toolkit
+1.0. You can refer to the documentation <a href="https://github.com/Virtual-Labs/lik">here</a> to restructure your labs.
+</p>
+<p>
+<b>Step 2:</b> Now you move on to the task of deploying a lab. First,
+install OpenVZ and create a container in the virtual environment. You
+can view the tutorial on how to install OpenVZ and create containers
+<a href="https://github.com/prakashbh/lik/blob/master/user-docs/intro-to-openvz.org">here</a>.
+</p>
+<p> 
+<b>Step 3:</b> Next, you need to log in to the container and install the
+dependent packages for the lab such as php, apache, mongodb etc. 
+</p>
+<p>
+Note: If your dependencies are incompatible with your platform, your package
+installation may be unsuccessful. In such a scenario, you may get in
+touch with VLEAD for further assistance.
+</p>
+<p>
+<b>Step 4:</b> After successful package installation, you need to
+ compile the source files and create a <code>build</code> directory with all the
+ executables.
+</p>
+<p>
+<b>Step 5:</b> Next, copy the build to
+</p>
+
+
+<pre class="example">/var/www/
+</pre>
+
+
+<p>
+Finally, your lab is deployed. Open
+a browser and type <code>container id</code> to see your lab.
+</p>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-4-4" class="outline-4">
+<h4 id="sec-1-4-4"><span class="section-number-4">1.4.4</span> Level 3</h4>
+<div class="outline-text-4" id="text-1-4-4">
+
+<p>The goal of level 3 is to automate the build process by writing a <code>make</code> file.
+</p>
+<p>
+<b>Step 1:</b> The lab source code is bound to change in the development environment or
+the test environment. Doing a manual build after every change is a
+time-consuming process. Therefore, the process is automated by writing a
+<code>make</code> file.  In simple terms, the <code>make</code> file sequentially runs all the
+necessary commands to convert the source code to executables and
+populates the build.  The copying process of <code>build</code> to the required
+<code>/var/www/</code> directory is also automated.
+</p>
+<p>
+A sample make file for a level 3 lab looks like <a href="./makefile">this</a>. You can also
+refer to the tutorial on <a href="http://www.gnu.org/software/make/manual/make.pdf}{Understanding">How to Write Make</a>.
+</p>
+<p>
+<b>Step 2:</b> Upon successful completion of the process, the lab is
+deployed. Open a browser and type <code>container id</code> to see your lab.
+</p>
+<p>
+<b>Step 3:</b> Now you need to push these changes to the GitHub repository.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-4-5" class="outline-4">
+<h4 id="sec-1-4-5"><span class="section-number-4">1.4.5</span> Level 4</h4>
+<div class="outline-text-4" id="text-1-4-5">
+
+<p>The goal of level 4 is to develop a lab deployment specification, also
+called a labspec.
+</p>
+<p>
+A labspec contains the necessary information related to lab hosting
+and deployment such as software, hardware, platform, technologies,
+authors etc.
+</p>
+<p>
+<b>Step 1:</b> You can refer to a sample labspec created for a lab
+<a href="./labspec.json">here</a>. The template to populate your own labspec can be found <a href="./labbspec-template.json">here</a>.
+</p>
+<p>
+<b>Step 2:</b> After the labspec is ready, use the OVPL kit to deploy the
+lab.  OVPL kit has the necessary documentation and scripts to perform
+auto deployment of labs. <a href="https://github.com/vlead/setup-ovpl-centos">Here</a> is the OVPL kit for your reference.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-4-6" class="outline-4">
+<h4 id="sec-1-4-6"><span class="section-number-4">1.4.6</span> Level 5</h4>
+<div class="outline-text-4" id="text-1-4-6">
+
+<p>The goal of level 5 is to automate the life cycle management of labs.
+</p>
+<p>
+OVPL is independent of lab-specific services. Every lab has its
+own set of services to be managed.  The Integration
+Engineer is expected to identify the services and automate the management
+of the identified services.
+</p>
+<p>
+For example, if a lab needs to run an "Apache" service, you can automate the process of starting the
+server using a <a href="./startup">script</a> and make it a part of the deployment process.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> Timeline for deliverables</h3>
+<div class="outline-text-3" id="text-1-5">
+
+<p>Following is the timeline and deliverabele for an Integration Engineer:
+</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Task</th><th scope="col" class="left">Timeline</th><th scope="col" class="left">Deliverable</th></tr>
+</thead>
+<tbody>
+<tr><td class="left"><b>Level 0 to Level 1</b></td><td class="left">1.5 weeks</td><td class="left">1) Have lab-wise repositories on GitHub</td></tr>
+<tr><td class="left">1) Have access to the sources of your Labs</td><td class="left"></td><td class="left">2) Lab sources versioned on GitHub</td></tr>
+<tr><td class="left">2) Create an account on GitHub</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">3) Contact VLEAD to create repositories for each lab</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">4) Push lab sources to the assigned repository in the format mentioned in Level 1</td><td class="left"></td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left"><b>Level 1 to Level 2</b></td><td class="left">3 weeks per lab</td><td class="left">1) Successful deployment of lab</td></tr>
+<tr><td class="left">1) Restructure each lab as per UI 1.0</td><td class="left"></td><td class="left">2) Push the sources to GitHub</td></tr>
+<tr><td class="left">2) Install OpenVZ and create containers</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">3) Identify and install dependencies manually</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">4) Compile the sources and copy the executables to <code>build</code></td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">5) Deploy the lab</td><td class="left"></td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left"><b>Level 2 to Level 3</b></td><td class="left">2 weeks per lab</td><td class="left">1) Deployment of lab</td></tr>
+<tr><td class="left">1) Understand and write <code>make</code> file to automate the build process</td><td class="left"></td><td class="left">2) Push the sources to GitHub</td></tr>
+<tr><td class="left">2) Deploy the lab</td><td class="left"></td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left"><b>Level 3 to Level 4</b></td><td class="left">3 weeks per lab</td><td class="left">1) One page report on lab deployment</td></tr>
+<tr><td class="left">1) Collect specifications for each lab</td><td class="left"></td><td class="left">2) Push the sources to GitHub</td></tr>
+<tr><td class="left">2) Populate the labspecification file</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">3) Use OVPL-kit for lab deployment</td><td class="left"></td><td class="left"></td></tr>
+</tbody>
+<tbody>
+<tr><td class="left"><b>Level 4 to Level 5</b></td><td class="left">2 weeks per lab</td><td class="left">1) Push the sources to GitHub</td></tr>
+<tr><td class="left">1) Write scripts for lab life cycle management</td><td class="left"></td><td class="left">2) Final report on completion</td></tr>
+</tbody>
+</table>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> Conclusion</h3>
+<div class="outline-text-3" id="text-1-6">
+
+<p>Now you have concluded the transformation process of the lab. Push all
+your changes to the GitHub repository and send a confirmation email to
+the VLEAD team.
+</p>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> APPENDIX A - Version Control and GitHub</h2>
+<div class="outline-text-2" id="text-2">
+
+
+<p>
+The objective of this appendix is to describe why to use version
+control and how to use "GitHub" as a version control tool.
+</p>
+<p>
+The environment we work generally has timely code releases with multiple
+developers working together. The biggest challenge in such a dynamic working condition is tracking 
+changes and co-ordinating the work of every developer. In other terms we need a version control.
+</p>
+<p>
+Version control supports below mentioned features:
+</p><ul>
+<li>Facility to log every version
+</li>
+<li>Ability to differentiate between several versions
+</li>
+<li>Revert back to required version
+</li>
+<li>Provide better collaboration among working team
+</li>
+<li>Convenient way of sharing data
+</li>
+<li>Facilitate backup of all versions produced
+</li>
+</ul>
+
+
+<p>
+More details about version control can be found <a href="http://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">here</a>
+</p>
+<p>
+GitHub is one of the many version control tools available today for
+version control. Following is the procedure to create an account on
+GitHub and set up a repository.
+</p>
+<p>
+<b>Account creation on Github</b>
+</p>
+<p>
+Step-1: Go to <a href="https://github.com/">https://github.com/</a> and create your personal account by
+chosing a username.  Enter your email and password and click on
+"Signup for GitHub". Refer to screenshot below:
+<img src="./Step-1.png" :scale=0.5 alt="./Step-1.png" />
+</p>
+<p>
+Step-2: You will be asked to choose your plan. Opt for "Free"
+which is seen as the last option unless you want to go for paid
+plans. Refer to screenshot below:
+<img src="./Step-2.png" :width 10px alt="./Step-2.png" />
+</p>
+<p>
+Step-3: Click on "Finish signup" to finish the final step.
+</p></div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2014-10-22</p>
+<p class="author">Author: VLEAD Team, IIITH</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>

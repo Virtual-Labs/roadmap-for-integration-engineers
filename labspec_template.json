@@ -1,0 +1,139 @@
+{
+    "lab": {
+        "build_requirements": {
+            "platform": {
+                "arch": "", 
+                "build_steps": {
+                    "build": [], 
+                    "configure": [], 
+                    "post_build": [], 
+                    "pre_build": [], 
+                    "status": []
+                }, 
+                "installer": [], 
+                "os": "", 
+                "osVersion": "", 
+                "service_pack": ""
+            }
+        }, 
+        "description": {
+            "developer": [
+                {
+                    "contact": {
+                        "alternate_email": "", 
+                        "email": "", 
+                        "mobile_number": "", 
+                        "office_number": ""
+                    }, 
+                    "department": "", 
+                    "institute": "", 
+                    "name": "", 
+                    "organization": "", 
+                    "role": "", 
+                    "title": "", 
+                    "web": ""
+                }, 
+                {
+                    "contact": {
+                        "alternate_email": "", 
+                        "email": "", 
+                        "mobile_number": "", 
+                        "office_number": ""
+                    }, 
+                    "department": "", 
+                    "institute": "", 
+                    "name": "", 
+                    "organization": "", 
+                    "role": "", 
+                    "title": "", 
+                    "web": ""
+                }, 
+                {
+                    "contact": {
+                        "alternate_email": "", 
+                        "email": "", 
+                        "mobile_number": "", 
+                        "office_number": ""
+                    }, 
+                    "department": "", 
+                    "institute": "", 
+                    "name": "", 
+                    "organization": "", 
+                    "role": "", 
+                    "title": "", 
+                    "web": ""
+                }, 
+                {
+                    "contact": {
+                        "alternate_email": "", 
+                        "email": "", 
+                        "mobile_number": "", 
+                        "office_number": ""
+                    }, 
+                    "department": "", 
+                    "institute": "", 
+                    "name": "", 
+                    "organization": "", 
+                    "role": "", 
+                    "title": "", 
+                    "web": ""
+                }, 
+                {
+                    "contact": {
+                        "alternate_email": "", 
+                        "email": "", 
+                        "mobile_number": "", 
+                        "office_number": ""
+                    }, 
+                    "department": "", 
+                    "institute": "", 
+                    "name": "", 
+                    "organization": "", 
+                    "role": "", 
+                    "title": "", 
+                    "web": ""
+                }
+            ], 
+            "discipline": [
+                ""
+            ], 
+            "id": "", 
+            "integration_level": , 
+            "name": "", 
+            "server-side": , 
+            "status": "", 
+            "type": ""
+        }, 
+        "runtime_requirements": {
+            "platform": {
+                "arch": "", 
+                "hosting": "", 
+                "installer": [], 
+                "lab_actions": {
+                    "backup": [], 
+                    "clean": [], 
+                    "init": [], 
+                    "pause": [], 
+                    "publish": [], 
+                    "restore": [], 
+                    "resume": [], 
+                    "shutdown": [], 
+                    "start": [],  
+                    "stats": [], 
+                    "stop": []
+                }, 
+                "memory": {
+                    "max_required": "", 
+                    "min_required": ""
+                }, 
+                "os": "", 
+                "osVersion": "", 
+                "servicepack": "", 
+                "storage": {
+                    "min_required": ""
+                }
+            }
+        }
+    }, 
+    "template": ""
+}
