@@ -215,7 +215,7 @@ your changes to the GitHub repository and send a confirmation email to
 the VLEAD team.
 
 
-* APPENDIX A - Version Control and GitHub
+** APPENDIX A - Version Control and GitHub
 
 The objective of this appendix is to describe why to use version
 control and how to use "GitHub" as a version control tool.
@@ -238,7 +238,7 @@ GitHub is one of the many version control tools available today for
 version control. Following is the procedure to create an account on
 GitHub and set up a repository.
 
-*Account creation on Github*
+*** Account creation on Github
 
 Step-1: Go to https://github.com/ and create your personal account by
 chosing a username.  Enter your email and password and click on
@@ -253,3 +253,23 @@ plans. Refer to screenshot below:
 [[./Step-2.png]]
 
 Step-3: Click on "Finish signup" to finish the final step.
+
+*** Creating a Repository 
+
+**** Creation of teams. 
+ We have 2 teams namely, Owners and Integrators. 
+ + Owners - Owners will create the repositories
+ + Integrators - Integrators will commit and push changes.
+
+**** Process for repository creation 
+ An integrator will make a request to the VLEAD for creation of a
+ repository. The request has to be sent to the following mail id for repository creation.
+#+begin_example
+ engg@virtual-labs.ac.in
+#+end_example
+
+**** Naming convention of the repository 
+        Engineer has to send the following data for repository creation.
+        + Discipline
+        + LabName
+        + InstituteName
