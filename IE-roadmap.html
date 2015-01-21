@@ -1,23 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Roadmap for Integration Engineers </title>
 <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="Roadmap for Integration Engineers "/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="[2014-10-22 Wednesday] "/>
+<meta name="generated" content="2014-10-22"/>
 <meta name="author" content="VLEAD Team, IIITH"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   html { font-family: Times, serif; font-size: 12pt; }
   .title  { text-align: center; }
   .todo   { color: red; }
   .done   { color: green; }
-  .tag    { background-color:lightblue; font-weight:normal }
+  .tag    { background-color: #add8e6; font-weight:normal }
   .target { }
-  .timestamp { color: grey }
-  .timestamp-kwd { color: CadetBlue }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
   p.verse { margin-left: 3% }
   pre {
 	border: 1pt solid #AEBDCC;
@@ -28,10 +34,23 @@ lang="en" xml:lang="en">
         overflow:auto;
   }
   table { border-collapse: collapse; }
-  td, th { vertical-align: top; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
   dt { font-weight: bold; }
   div.figure { padding: 0.5em; }
   div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
   .linenr { font-size:smaller }
   .code-highlighted {background-color:#ffff00;}
   .org-info-js_info-navigation { border-style:none; }
@@ -56,7 +75,7 @@ org_html_manager.set("FIXED_TOC", "0");
 org_html_manager.set("TOC", "1");
 org_html_manager.set("VIEW", "info");
 org_html_manager.setup();  // activate after the parameters are set
-/*]]>*/-->
+/*]]>*///-->
 </script>
 <script type="text/javascript">
 <!--/*--><![CDATA[/*><!--*/
@@ -78,9 +97,22 @@ org_html_manager.setup();  // activate after the parameters are set
    if(elem.cacheClassTarget)
      target.className = elem.cacheClassTarget;
  }
-/*]]>*/-->
+/*]]>*///-->
 </script>
-</head><body>
+
+</head>
+<body>
+<div id="org-div-home-and-up" style="text-align:right;font-size:70%;white-space:nowrap;">
+ <a accesskey="h" href="./index.html"> UP </a>
+ |
+ <a accesskey="H" href="./index.html"> HOME </a>
+</div>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
 <h1 class="title">Roadmap for Integration Engineers </h1>
 
 
@@ -88,25 +120,26 @@ org_html_manager.setup();  // activate after the parameters are set
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1 About this Document </a></li>
-<li><a href="#sec-2">2 Pre-requisites </a></li>
-<li><a href="#sec-3">3 Integration levels </a></li>
-<li><a href="#sec-4">4 Transformation Process from Level 0 to Level 5 </a>
+<li><a href="#sec-1">1 About this Document</a></li>
+<li><a href="#sec-2">2 Pre-requisites</a></li>
+<li><a href="#sec-3">3 Integration levels</a></li>
+<li><a href="#sec-4">4 Transformation Process from Level 0 to Level 5</a>
 <ul>
-<li><a href="#sec-4.1">4.1 Level 0 </a></li>
-<li><a href="#sec-4.2">4.2 Level 1 </a></li>
-<li><a href="#sec-4.3">4.3 Level 2 </a></li>
-<li><a href="#sec-4.4">4.4 Level 3 </a></li>
-<li><a href="#sec-4.5">4.5 Level 4 </a></li>
-<li><a href="#sec-4.6">4.6 Level 5 </a></li>
+<li><a href="#sec-4-1">4.1 Level 0</a></li>
+<li><a href="#sec-4-2">4.2 Level 1</a></li>
+<li><a href="#sec-4-3">4.3 Level 2</a></li>
+<li><a href="#sec-4-4">4.4 Level 3</a></li>
+<li><a href="#sec-4-5">4.5 Level 4</a></li>
+<li><a href="#sec-4-6">4.6 Level 5</a></li>
 </ul>
 </li>
-<li><a href="#sec-5">5 Timeline for deliverables </a></li>
-<li><a href="#sec-6">6 Conclusion </a></li>
-<li><a href="#sec-7">7 APPENDIX A - Version Control and GitHub </a>
+<li><a href="#sec-5">5 Timeline for deliverables</a></li>
+<li><a href="#sec-6">6 Conclusion</a></li>
+<li><a href="#sec-7">7 APPENDIX A - Version Control and GitHub</a>
 <ul>
-<li><a href="#sec-7.1">7.1 Account creation on Github </a></li>
-<li><a href="#sec-7.2">7.2 Creating a Repository </a></li>
+<li><a href="#sec-7-1">7.1 Account creation on Github</a></li>
+<li><a href="#sec-7-2">7.2 Creating a Repository</a></li>
+<li><a href="#sec-7-3">7.3 Hosting of labs: Communication Process for hosting of labs on cloud</a></li>
 </ul>
 </li>
 </ul>
@@ -114,8 +147,8 @@ org_html_manager.setup();  // activate after the parameters are set
 </div>
 
 <div id="outline-container-1" class="outline-3">
-<h3 id="sec-1">1 About this Document </h3>
-<div id="text-1">
+<h3 id="sec-1"><span class="section-number-3">1</span> About this Document</h3>
+<div class="outline-text-3" id="text-1">
 
 
 <p>
@@ -136,84 +169,72 @@ during the transformation process.
 </div>
 
 <div id="outline-container-2" class="outline-3">
-<h3 id="sec-2">2 Pre-requisites </h3>
-<div id="text-2">
+<h3 id="sec-2"><span class="section-number-3">2</span> Pre-requisites</h3>
+<div class="outline-text-3" id="text-2">
 
 
 <p>
 The Integration Engineers must have access to the source
 files of their labs. They are expected to know the following:
 </p><ul>
-<li>
-Execute basic shell commands in CentOS 6.5
+<li>Execute basic shell commands in CentOS 6.5
 </li>
-<li>
-Create and delete a container in OpenVZ virtual environment
+<li>Create and delete a container in OpenVZ virtual environment
 </li>
-<li>
-Create or modify an HTML page and write code in JavaScript
+<li>Create or modify an HTML page and write code in JavaScript
 </li>
-<li>
-Use git, a version control tool
-
+<li>Use git, a version control tool
 </li>
 </ul>
 
-<p>The Integration Engineers are expected to have the following system requirements:
+
+<p>
+The Integration Engineers are expected to have the following system requirements:
 </p><ul>
-<li>
-Minimum 2GB RAM
+<li>Minimum 2GB RAM
 </li>
-<li>
-The machine should have one dedicated partition for CentOS
-(version 6.5 only)
+<li>The machine should have one dedicated partition for CentOS
+      (version 6.5 only)
 </li>
-<li>
-Minimum 50GB hard disk space
+<li>Minimum 50GB hard disk space
 </li>
-<li>
-64-bit processor
+<li>64-bit processor
 </li>
-<li>
-The machine should have a dual core processor
-
+<li>The machine should have a dual core processor
 </li>
 </ul>
+
+
 </div>
 
 </div>
 
 <div id="outline-container-3" class="outline-3">
-<h3 id="sec-3">3 Integration levels </h3>
-<div id="text-3">
+<h3 id="sec-3"><span class="section-number-3">3</span> Integration levels</h3>
+<div class="outline-text-3" id="text-3">
 
 <p>During the integration process, the source code of the labs move
 through various levels of automation. The objective of the document is to help you
 tranform your lab sources from Level 0 to Level 5 as described below:
 </p>
 <ul>
-<li>
-Level 0 : Unversioned
+<li>Level 0 : Unversioned
 </li>
-<li>
-Level 1 : Under version control
+<li>Level 1 : Under version control
 </li>
-<li>
-Level 2 : Manually built on developer's machine
+<li>Level 2 : Manually built on developer's machine
 </li>
-<li>
-Level 3 : Build process is automated
+<li>Level 3 : Build process is automated
 </li>
-<li>
-Level 4 : Ready with deployment specification
+<li>Level 4 : Ready with deployment specification
 </li>
-<li>
-Level 5 : Life cycle management
-
+<li>Level 5 : Life cycle management
 </li>
 </ul>
 
-<p>You must document the steps taken during the integration process in
+
+<p>
+You must document the steps taken during the integration process in
 the wiki page of your lab repository on GitHub.
 </p>
 </div>
@@ -221,8 +242,8 @@ the wiki page of your lab repository on GitHub.
 </div>
 
 <div id="outline-container-4" class="outline-3">
-<h3 id="sec-4">4 Transformation Process from Level 0 to Level 5 </h3>
-<div id="text-4">
+<h3 id="sec-4"><span class="section-number-3">4</span> Transformation Process from Level 0 to Level 5</h3>
+<div class="outline-text-3" id="text-4">
 
 <p>The task of an Integration Engineer is to transform the lab sources
 to level 5 from its current level. Described below is the
@@ -232,24 +253,21 @@ process of transformation of lab sources at each level.
 
 </div>
 
-<div id="outline-container-4.1" class="outline-4">
-<h4 id="sec-4.1">4.1 Level 0 </h4>
-<div id="text-4.1">
+<div id="outline-container-4-1" class="outline-4">
+<h4 id="sec-4-1"><span class="section-number-4">4.1</span> Level 0</h4>
+<div class="outline-text-4" id="text-4-1">
 
 <p>Your lab is at level 0 if your lab sources are unversioned. At this
-level, the source code of your lab will look like the sample below:
+ level, the source code of your lab will look like the sample below:
+ <img src="./level-0.png"  alt="./level-0.png" />
 </p>
-<div class="figure">
-<p><img src="./level-0.png"  alt="./level-0.png" /></p>
 </div>
 
 </div>
 
-</div>
-
-<div id="outline-container-4.2" class="outline-4">
-<h4 id="sec-4.2">4.2 Level 1 </h4>
-<div id="text-4.2">
+<div id="outline-container-4-2" class="outline-4">
+<h4 id="sec-4-2"><span class="section-number-4">4.2</span> Level 1</h4>
+<div class="outline-text-4" id="text-4-2">
 
 <p>The goal of level 1 is to have the source code versioned on GitHub.
 </p>
@@ -261,52 +279,46 @@ structured and organized as follows:
 
 
 
-<pre class="example">
-    - /src
-        |
-        ---- /lab
-        |
-        ---- /images
-        | 
-        ---- /exp     
-               |
-               ---- /exp1
-                      |
-                      ---- /img
-                      | 
-                      ---- /js      
-               |
-               ----  /exp2
-                       |    
-                       ---- /img
-                       |
-                       ---- /js
-        |
-        ---- /lib
-        |
-        ---- /themes
-        |
-        ---- /help
-    - /scripts (if any)
+<pre class="example">- /src
+    |
+    ---- /lab
+    |
+    ---- /images
+    | 
+    ---- /exp     
+           |
+           ---- /exp1
+                  |
+                  ---- /img
+                  | 
+                  ---- /js      
+           |
+           ----  /exp2
+                   |    
+                   ---- /img
+                   |
+                   ---- /js
+    |
+    ---- /lib
+    |
+    ---- /themes
+    |
+    ---- /help
+- /scripts (if any)
 </pre>
-
-
 
 
 <p>
 Below is a sample screenshot of how a level 1 source looks like:
+<img src="./level-1.png"  alt="./level-1.png" />
 </p>
-<div class="figure">
-<p><img src="./level-1.png"  alt="./level-1.png" /></p>
 </div>
 
 </div>
 
-</div>
-
-<div id="outline-container-4.3" class="outline-4">
-<h4 id="sec-4.3">4.3 Level 2 </h4>
-<div id="text-4.3">
+<div id="outline-container-4-3" class="outline-4">
+<h4 id="sec-4-3"><span class="section-number-4">4.3</span> Level 2</h4>
+<div class="outline-text-4" id="text-4-3">
 
 <p>The goal of level 2 is to manually build and deploy the lab in the
 developer environment. Before the deployment of labs, it is advisable
@@ -322,7 +334,7 @@ install OpenVZ and create a container in the virtual environment. You
 can view the tutorial on how to install OpenVZ and create containers
 <a href="https://github.com/prakashbh/lik/blob/master/user-docs/intro-to-openvz.org">here</a>.
 </p>
-<p>
+<p> 
 <b>Step 3:</b> Next, you need to log in to the container and install the
 dependent packages for the lab such as php, apache, mongodb etc. 
 </p>
@@ -333,19 +345,16 @@ touch with VLEAD for further assistance.
 </p>
 <p>
 <b>Step 4:</b> After successful package installation, you need to
-compile the source files and create a <code>build</code> directory with all the
-executables.
+ compile the source files and create a <code>build</code> directory with all the
+ executables.
 </p>
 <p>
 <b>Step 5:</b> Next, copy the build to
 </p>
 
 
-<pre class="example">
-/var/www/
+<pre class="example">/var/www/
 </pre>
-
-
 
 
 <p>
@@ -357,9 +366,9 @@ a browser and type <code>container id</code> to see your lab.
 
 </div>
 
-<div id="outline-container-4.4" class="outline-4">
-<h4 id="sec-4.4">4.4 Level 3 </h4>
-<div id="text-4.4">
+<div id="outline-container-4-4" class="outline-4">
+<h4 id="sec-4-4"><span class="section-number-4">4.4</span> Level 3</h4>
+<div class="outline-text-4" id="text-4-4">
 
 <p>The goal of level 3 is to automate the build process by writing a <code>make</code> file.
 </p>
@@ -387,9 +396,9 @@ deployed. Open a browser and type <code>container id</code> to see your lab.
 
 </div>
 
-<div id="outline-container-4.5" class="outline-4">
-<h4 id="sec-4.5">4.5 Level 4 </h4>
-<div id="text-4.5">
+<div id="outline-container-4-5" class="outline-4">
+<h4 id="sec-4-5"><span class="section-number-4">4.5</span> Level 4</h4>
+<div class="outline-text-4" id="text-4-5">
 
 <p>The goal of level 4 is to develop a lab deployment specification, also
 called a labspec.
@@ -412,9 +421,9 @@ auto deployment of labs. <a href="https://github.com/vlead/setup-ovpl-centos">He
 
 </div>
 
-<div id="outline-container-4.6" class="outline-4">
-<h4 id="sec-4.6">4.6 Level 5 </h4>
-<div id="text-4.6">
+<div id="outline-container-4-6" class="outline-4">
+<h4 id="sec-4-6"><span class="section-number-4">4.6</span> Level 5</h4>
+<div class="outline-text-4" id="text-4-6">
 
 <p>The goal of level 5 is to automate the life cycle management of labs.
 </p>
@@ -434,45 +443,46 @@ server using a <a href="./startup">script</a> and make it a part of the deployme
 </div>
 
 <div id="outline-container-5" class="outline-3">
-<h3 id="sec-5">5 Timeline for deliverables </h3>
-<div id="text-5">
+<h3 id="sec-5"><span class="section-number-3">5</span> Timeline for deliverables</h3>
+<div class="outline-text-3" id="text-5">
 
 <p>Following is the timeline and deliverabele for an Integration Engineer:
 </p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<col align="left"></col><col align="left"></col><col align="left"></col>
+<caption></caption>
+<colgroup><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
 <thead>
-<tr><th>Task</th><th>Timeline</th><th>Deliverable</th></tr>
+<tr><th scope="col" class="left">Task</th><th scope="col" class="left">Timeline</th><th scope="col" class="left">Deliverable</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Level 0 to Level 1</b></td><td>1.5 weeks</td><td>1) Have lab-wise repositories on GitHub</td></tr>
-<tr><td>1) Have access to the sources of your Labs</td><td></td><td>2) Lab sources versioned on GitHub</td></tr>
-<tr><td>2) Create an account on GitHub</td><td></td><td></td></tr>
-<tr><td>3) Contact VLEAD to create repositories for each lab</td><td></td><td></td></tr>
-<tr><td>4) Push lab sources to the assigned repository in the format mentioned in Level 1</td><td></td><td></td></tr>
-<tr><td></td><td></td><td></td></tr>
+<tr><td class="left"><b>Level 0 to Level 1</b></td><td class="left">1.5 weeks</td><td class="left">1) Have lab-wise repositories on GitHub</td></tr>
+<tr><td class="left">1) Have access to the sources of your Labs</td><td class="left"></td><td class="left">2) Lab sources versioned on GitHub</td></tr>
+<tr><td class="left">2) Create an account on GitHub</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">3) Contact VLEAD to create repositories for each lab</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">4) Push lab sources to the assigned repository in the format mentioned in Level 1</td><td class="left"></td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td><b>Level 1 to Level 2</b></td><td>3 weeks per lab</td><td>1) Successful deployment of lab</td></tr>
-<tr><td>1) Restructure each lab as per UI 1.0</td><td></td><td>2) Push the sources to GitHub</td></tr>
-<tr><td>2) Install OpenVZ and create containers</td><td></td><td></td></tr>
-<tr><td>3) Identify and install dependencies manually</td><td></td><td></td></tr>
-<tr><td>4) Compile the sources and copy the executables to <code>build</code></td><td></td><td></td></tr>
-<tr><td>5) Deploy the lab</td><td></td><td></td></tr>
+<tr><td class="left"><b>Level 1 to Level 2</b></td><td class="left">3 weeks per lab</td><td class="left">1) Successful deployment of lab</td></tr>
+<tr><td class="left">1) Restructure each lab as per UI 1.0</td><td class="left"></td><td class="left">2) Push the sources to GitHub</td></tr>
+<tr><td class="left">2) Install OpenVZ and create containers</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">3) Identify and install dependencies manually</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">4) Compile the sources and copy the executables to <code>build</code></td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">5) Deploy the lab</td><td class="left"></td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td><b>Level 2 to Level 3</b></td><td>2 weeks per lab</td><td>1) Deployment of lab</td></tr>
-<tr><td>1) Understand and write <code>make</code> file to automate the build process</td><td></td><td>2) Push the sources to GitHub</td></tr>
-<tr><td>2) Deploy the lab</td><td></td><td></td></tr>
+<tr><td class="left"><b>Level 2 to Level 3</b></td><td class="left">2 weeks per lab</td><td class="left">1) Deployment of lab</td></tr>
+<tr><td class="left">1) Understand and write <code>make</code> file to automate the build process</td><td class="left"></td><td class="left">2) Push the sources to GitHub</td></tr>
+<tr><td class="left">2) Deploy the lab</td><td class="left"></td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td><b>Level 3 to Level 4</b></td><td>3 weeks per lab</td><td>1) One page report on lab deployment</td></tr>
-<tr><td>1) Collect specifications for each lab</td><td></td><td>2) Push the sources to GitHub</td></tr>
-<tr><td>2) Populate the labspecification file</td><td></td><td></td></tr>
-<tr><td>3) Use OVPL-kit for lab deployment</td><td></td><td></td></tr>
+<tr><td class="left"><b>Level 3 to Level 4</b></td><td class="left">3 weeks per lab</td><td class="left">1) One page report on lab deployment</td></tr>
+<tr><td class="left">1) Collect specifications for each lab</td><td class="left"></td><td class="left">2) Push the sources to GitHub</td></tr>
+<tr><td class="left">2) Populate the labspecification file</td><td class="left"></td><td class="left"></td></tr>
+<tr><td class="left">3) Use OVPL-kit for lab deployment</td><td class="left"></td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td><b>Level 4 to Level 5</b></td><td>2 weeks per lab</td><td>1) Push the sources to GitHub</td></tr>
-<tr><td>1) Write scripts for lab life cycle management</td><td></td><td>2) Final report on completion</td></tr>
+<tr><td class="left"><b>Level 4 to Level 5</b></td><td class="left">2 weeks per lab</td><td class="left">1) Push the sources to GitHub</td></tr>
+<tr><td class="left">1) Write scripts for lab life cycle management</td><td class="left"></td><td class="left">2) Final report on completion</td></tr>
 </tbody>
 </table>
 
@@ -483,8 +493,8 @@ server using a <a href="./startup">script</a> and make it a part of the deployme
 </div>
 
 <div id="outline-container-6" class="outline-3">
-<h3 id="sec-6">6 Conclusion </h3>
-<div id="text-6">
+<h3 id="sec-6"><span class="section-number-3">6</span> Conclusion</h3>
+<div class="outline-text-3" id="text-6">
 
 <p>Now you have concluded the transformation process of the lab. Push all
 your changes to the GitHub repository and send a confirmation email to
@@ -496,8 +506,8 @@ the VLEAD team.
 </div>
 
 <div id="outline-container-7" class="outline-3">
-<h3 id="sec-7">7 APPENDIX A - Version Control and GitHub </h3>
-<div id="text-7">
+<h3 id="sec-7"><span class="section-number-3">7</span> APPENDIX A - Version Control and GitHub</h3>
+<div class="outline-text-3" id="text-7">
 
 
 <p>
@@ -512,28 +522,23 @@ changes and co-ordinating the work of every developer. In other terms we need a 
 <p>
 Version control supports below mentioned features:
 </p><ul>
-<li>
-Facility to log every version
+<li>Facility to log every version
 </li>
-<li>
-Ability to differentiate between several versions
+<li>Ability to differentiate between several versions
 </li>
-<li>
-Revert back to required version
+<li>Revert back to required version
 </li>
-<li>
-Provide better collaboration among working team
+<li>Provide better collaboration among working team
 </li>
-<li>
-Convenient way of sharing data
+<li>Convenient way of sharing data
 </li>
-<li>
-Facilitate backup of all versions produced
-
+<li>Facilitate backup of all versions produced
 </li>
 </ul>
 
-<p>More details about version control can be found <a href="http://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">here</a>
+
+<p>
+More details about version control can be found <a href="http://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">here</a>
 </p>
 <p>
 GitHub is one of the many version control tools available today for
@@ -543,29 +548,23 @@ GitHub and set up a repository.
 
 </div>
 
-<div id="outline-container-7.1" class="outline-4">
-<h4 id="sec-7.1">7.1 Account creation on Github </h4>
-<div id="text-7.1">
+<div id="outline-container-7-1" class="outline-4">
+<h4 id="sec-7-1"><span class="section-number-4">7.1</span> Account creation on Github</h4>
+<div class="outline-text-4" id="text-7-1">
 
 
 <p>
 Step-1: Go to <a href="https://github.com/">https://github.com/</a> and create your personal account by
 chosing a username.  Enter your email and password and click on
 "Signup for GitHub". Refer to screenshot below:
+<img src="./Step-1.png" :scale=0.5 alt="./Step-1.png" />
 </p>
-<div class="figure">
-<p><img src="./Step-1.png" :scale=0.5 alt="./Step-1.png" /></p>
-</div>
-
 <p>
 Step-2: You will be asked to choose your plan. Opt for "Free"
 which is seen as the last option unless you want to go for paid
 plans. Refer to screenshot below:
+<img src="./Step-2.png" :width 10px alt="./Step-2.png" />
 </p>
-<div class="figure">
-<p><img src="./Step-2.png" :width 10px alt="./Step-2.png" /></p>
-</div>
-
 <p>
 Step-3: Click on "Finish signup" to finish the final step.
 </p>
@@ -573,64 +572,83 @@ Step-3: Click on "Finish signup" to finish the final step.
 
 </div>
 
-<div id="outline-container-7.2" class="outline-4">
-<h4 id="sec-7.2">7.2 Creating a Repository </h4>
-<div id="text-7.2">
+<div id="outline-container-7-2" class="outline-4">
+<h4 id="sec-7-2"><span class="section-number-4">7.2</span> Creating a Repository</h4>
+<div class="outline-text-4" id="text-7-2">
 
 
 <ul>
-<li id="sec-7.2.1">Creation of teams. <br/>
-We have 2 teams namely, Owners and Integrators. 
+<li id="sec-7-2-1">Creation of teams.<br/>
+ We have 2 teams namely, Owners and Integrators. 
 <ul>
-<li>
-Owners - Owners will create the repositories
+<li>Owners - Owners will create the repositories
 </li>
-<li>
-Integrators - Integrators will commit and push changes.
+<li>Integrators - Integrators will commit and push changes.
+</li>
+</ul>
+
 
 </li>
 </ul>
-</li>
-<li id="sec-7.2.2">Process for repository creation <br/>
-An integrator will make a request to the VLEAD for creation of a
-repository. The request has to be sent to the following mail id for repository creation.
+<ul>
+<li id="sec-7-2-2">Process for repository creation<br/>
+ An integrator will make a request to the VLEAD for creation of a
+ repository. The request has to be sent to the following mail id for repository creation.
 
 
 
-<pre class="example">
- engg@virtual-labs.ac.in
+<pre class="example">engg@virtual-labs.ac.in
 </pre>
 
 
-
-
 </li>
-<li id="sec-7.2.3">Naming convention of the repository <br/>
-Engineer has to send the following data for repository creation.
+</ul>
 <ul>
-<li>
-Discipline
+<li id="sec-7-2-3">Naming convention of the repository<br/>
+        Engineer has to send the following data for repository creation.
+<ul>
+<li>Discipline
 </li>
-<li>
-LabName
+<li>LabName
 </li>
-<li>
-InstituteName
+<li>InstituteName
+</li>
+</ul>
 
 
 
 
 </li>
 </ul>
-</li>
-</ul>
 </div>
+
 </div>
-</div>
-<div id="postamble"><p class="author"> Author: VLEAD Team, IIITH
-<a href="mailto:engg@virtual-labs.ac.in">&lt;engg@virtual-labs.ac.in&gt;</a>
+
+<div id="outline-container-7-3" class="outline-4">
+<h4 id="sec-7-3"><span class="section-number-4">7.3</span> Hosting of labs: Communication Process for hosting of labs on cloud</h4>
+<div class="outline-text-4" id="text-7-3">
+
+<p>     The Integration Engineer must contact the VLEAD team
+     stating that the lab is successfully deployed with ADS and hence
+     request to get them hosted on cloud. The request has to be sent
+     to the VLEAD team through the following mail id for hosting purpose.
 </p>
-<p class="date"> Date: [2014-10-22 Wednesday] </p>
-<p>HTML generated by org-mode 6.21b in emacs 23</p>
-</div></body>
+
+
+<pre class="example">engg@virtual-labs.ac.in
+</pre>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2014-10-22</p>
+<p class="author">Author: VLEAD Team, IIITH</p>
+<p class="creator">Org version 7.8.11 with Emacs version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
 </html>
