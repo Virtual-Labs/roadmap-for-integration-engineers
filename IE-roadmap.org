@@ -277,10 +277,10 @@ Step-3: Click on "Finish signup" to finish the final step.
 
 
 *** Hosting of labs post Level 5: Communication Process for hosting labs on cloud
-     The Integration Engineer must contact the VLEAD team
-     stating that the lab is successfully deployed with ADS and
-     requesting them to host on the cloud. The request has to be sent
-     to the VLEAD team using the following email id.
-#+begin_example
- engg@virtual-labs.ac.in
-#+end_example
+
+After the lab is at level 5, the lab-integrator must post a hosting request that should include: lab name, institute name, and the link to repository of the lab sources. This needs to be posted on the engineers forum at:
+https://github.com/Virtual-Labs/engineers-forum
+
+The lab-integrator must put this hosting request under the label "request-for-hosting".
+
+Then VLEAD will host the lab and the lab-integrator will be informed if the hosting is successful or not.
