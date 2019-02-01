@@ -10,7 +10,7 @@
 
 This document provides a roadmap to the Integration Engineers of
 Virtual Labs to transform their labs sources from Integration level 0
-to Integration level 5. 
+to Integration level 6. 
 
 This document describes the steps to be undertaken, reference
 documents and the necessary support needed by the Integration Engineers
@@ -36,7 +36,7 @@ The Integration Engineers are expected to have the following system requirements
 ** Integration levels
 During the integration process, the source code of the labs move
 through various levels of automation. The objective of the document is to help you
-tranform your lab sources from Level 0 to Level 5 as described below:
+tranform your lab sources from Level 0 to Level 6 as described below:
 
 - Level 0 : Unversioned
 - Level 1 : Under version control
@@ -44,13 +44,13 @@ tranform your lab sources from Level 0 to Level 5 as described below:
 - Level 3 : Build process is automated
 - Level 4 : Ready with deployment specification
 - Level 5 : Life cycle management
-
+- Level 6 : Add backup scripts and Request for Hosting
 You must document the steps taken during the integration process in
 the wiki page of your lab repository on GitHub.
   
-** Transformation Process from Level 0 to Level 5
+** Transformation Process from Level 0 to Level 6
 The task of an Integration Engineer is to transform the lab sources
-to level 5 from its current level. Described below is the
+to level 6 from its current level. Described below is the
 process of transformation of lab sources at each level.
 
 
@@ -130,7 +130,6 @@ touch with VLEAD for further assistance.
 Finally, your lab is deployed. Open
 a browser and type =container id= to see your lab.
 
-
 *** Level 3 
 The goal of level 3 is to automate the build process by writing a =make= file.
 
@@ -166,54 +165,70 @@ lab.  OVPL kit has the necessary documentation and scripts to perform
 auto deployment of labs. [[https://github.com/vlead/setup-ovpl-centos][Here]] is the OVPL kit for your reference.
 
 *** Level 5
-The goal of level 5 is to automate the life cycle management of labs.
+The goal of level 5 is to automate the lab deployment process. OVPL is
+independent of lab-specific services. Every lab has its own set of
+services to be managed.  The Integration Engineer is expected to
+identify the services and automate the management of the identified
+services.
 
-OVPL is independent of lab-specific services. Every lab has its
-own set of services to be managed.  The Integration
-Engineer is expected to identify the services and automate the management
-of the identified services.
-
-For example, if a lab needs to run an "Apache" service, you can automate the process of starting the
-server using a [[./startup][script]] and make it a part of the deployment process.
+For example, if a lab needs to run an "Apache" service, you can
+automate the process of starting the server using a [[./startup][script]] and make it
+a part of the deployment process.
+ 
+*** Level 6
+The goal of level 6 is to add scripts to the lab repository and
+request to host the lab.  Following are the scripts to be added to the
+repository
+1. backup ( backup script is used to backup the data used by the lab )
+2. restore ( restore script is used to restore the data used by the
+   lab )
+3. start ( start script is used to start all the services required to
+   run the lab )
+4. stop ( stop script is used to stop all the services on the
+   container started by the lab )
+5. test ( test script checks if all the services used by the lab are
+   running properly )
+  
++ Raise an issue on [[https://github.com/Virtual-Labs/engineers-forum][engineers-forum]] to host the lab. 
 
 ** Timeline for deliverables
 Following is the timeline and deliverabele for an Integration Engineer:
-|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------|
-| Task                                                                              | Timeline        | Deliverable                             |
-|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------|
-| *Level 0 to Level 1*                                                              | 1.5 weeks       | 1) Have lab-wise repositories on GitHub |
-| 1) Have access to the sources of your Labs                                        |                 | 2) Lab sources versioned on GitHub      |
-| 2) Create an account on GitHub                                                    |                 |                                         |
-| 3) Contact VLEAD to create repositories for each lab                              |                 |                                         |
-| 4) Push lab sources to the assigned repository in the format mentioned in Level 1 |                 |                                         |
-|                                                                                   |                 |                                         |
-|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------|
-| *Level 1 to Level 2*                                                              | 3 weeks per lab | 1) Successful deployment of lab         |
-| 1) Restructure each lab as per UI 1.0                                             |                 | 2) Push the sources to GitHub           |
-| 2) Install OpenVZ and create containers                                           |                 |                                         |
-| 3) Identify and install dependencies manually                                     |                 |                                         |
-| 4) Compile the sources and copy the executables to =build=                        |                 |                                         |
-| 5) Deploy the lab                                                                 |                 |                                         |
-|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------|
-| *Level 2 to Level 3*                                                              | 2 weeks per lab | 1) Deployment of lab                    |
-| 1) Understand and write =make= file to automate the build process                 |                 | 2) Push the sources to GitHub           |
-| 2) Deploy the lab                                                                 |                 |                                         |
-|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------|
-| *Level 3 to Level 4*                                                              | 3 weeks per lab | 1) One page report on lab deployment    |
-| 1) Collect specifications for each lab                                            |                 | 2) Push the sources to GitHub           |
-| 2) Populate the labspecification file                                             |                 |                                         |
-| 3) Use OVPL-kit for lab deployment                                                |                 |                                         |
-|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------|
-| *Level 4 to Level 5*                                                              | 2 weeks per lab | 1) Push the sources to GitHub           |
-| 1) Write scripts for lab life cycle management                                    |                 | 2) Final report on completion           |
-|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------|
-
+|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------+---+---+---|
+| Task                                                                              | Timeline        | Deliverable                             |   |   |   |
+|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------+---+---+---|
+| *Level 0 to Level 1*                                                              | 1.5 weeks       | 1) Have lab-wise repositories on GitHub |   |   |   |
+| 1) Have access to the sources of your Labs                                        |                 | 2) Lab sources versioned on GitHub      |   |   |   |
+| 2) Create an account on GitHub                                                    |                 |                                         |   |   |   |
+| 3) Contact VLEAD to create repositories for each lab                              |                 |                                         |   |   |   |
+| 4) Push lab sources to the assigned repository in the format mentioned in Level 1 |                 |                                         |   |   |   |
+|                                                                                   |                 |                                         |   |   |   |
+|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------+---+---+---|
+| *Level 1 to Level 2*                                                              | 3 weeks per lab | 1) Successful deployment of lab         |   |   |   |
+| 1) Restructure each lab as per UI 1.0                                             |                 | 2) Push the sources to GitHub           |   |   |   |
+| 2) Install OpenVZ and create containers                                           |                 |                                         |   |   |   |
+| 3) Identify and install dependencies manually                                     |                 |                                         |   |   |   |
+| 4) Compile the sources and copy the executables to =build=                        |                 |                                         |   |   |   |
+| 5) Deploy the lab                                                                 |                 |                                         |   |   |   |
+|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------+---+---+---|
+| *Level 2 to Level 3*                                                              | 2 weeks per lab | 1) Deployment of lab                    |   |   |   |
+| 1) Understand and write =make= file to automate the build process                 |                 | 2) Push the sources to GitHub           |   |   |   |
+| 2) Deploy the lab                                                                 |                 |                                         |   |   |   |
+|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------+---+---+---|
+| *Level 3 to Level 4*                                                              | 3 weeks per lab | 1) One page report on lab deployment    |   |   |   |
+| 1) Collect specifications for each lab                                            |                 | 2) Push the sources to GitHub           |   |   |   |
+| 2) Populate the labspecification file                                             |                 |                                         |   |   |   |
+|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------+---+---+---|
+| *Level 4 to Level 5*                                                              | 2 weeks per lab | 1) Push the sources to GitHub           |   |   |   |
+| 1) Use OVPL-kit for lab deployment                                                |                 | 2) Final report on completion           |   |   |   |
+|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------+---+---+---|
+| *Level 5 to Lavel 6*                                                              |                 | 1) Push the sources to Github           |   |   |   |
+| 1) Add backup scripts and Raise an issue requesting to host the lab               |                 | 2) Request for hosting                  |   |   |   |
+|-----------------------------------------------------------------------------------+-----------------+-----------------------------------------+---+---+---|
 
 ** Conclusion
 Now you have concluded the transformation process of the lab. Push all
 your changes to the GitHub repository and send a confirmation email to
 the VLEAD team.
-
 
 ** APPENDIX A - Version Control and GitHub
 
@@ -274,13 +289,15 @@ Step-3: Click on "Finish signup" to finish the final step.
         + LabName
         + InstituteName
 
+*** Hosting of labs post Level 6: Communication Process for hosting labs on cloud
 
+After the lab is at level 6, the lab-integrator must post a hosting
+request that should include: lab name, institute name, and the link to
+repository of the lab sources. This needs to be posted on the
+engineers forum at: https://github.com/Virtual-Labs/engineers-forum
 
-*** Hosting of labs post Level 5: Communication Process for hosting labs on cloud
+The lab-integrator must put this hosting request under the label
+"request-for-hosting".
 
-After the lab is at level 5, the lab-integrator must post a hosting request that should include: lab name, institute name, and the link to repository of the lab sources. This needs to be posted on the engineers forum at:
-https://github.com/Virtual-Labs/engineers-forum
-
-The lab-integrator must put this hosting request under the label "request-for-hosting".
-
-Then VLEAD will host the lab and the lab-integrator will be informed if the hosting is successful or not.
+Then VLEAD will host the lab and the lab-integrator will be informed
+if the hosting is successful or not.
