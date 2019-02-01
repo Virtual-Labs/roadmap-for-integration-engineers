@@ -301,3 +301,5 @@ The lab-integrator must put this hosting request under the label
 
 Then VLEAD will host the lab and the lab-integrator will be informed
 if the hosting is successful or not.
+
+*Note:* To convert the lab to UI-3.0, [[https://github.com/integration-team-iiith/Web1.0-to-web3.0/blob/master/UI-3.0/conversion-to-ui-3.0.org][here]] is the document on how to convert the lab to UI-3.0 9 (all iiith labs - http://ps-iiith.vlabs.ac.in)
