@@ -33,7 +33,7 @@
    Before you start using VLABS UI 3.0 Toolkit, you need to understand the
    structure of the lab.
    
-   [[images/Lab Structure.png]]
+   [[images/ui3.0-lab-structure.png]]
      
 ** Details of the files of VLABS UI-3.0
    
