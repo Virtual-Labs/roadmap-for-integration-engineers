@@ -77,7 +77,7 @@
     
      For the detailed information about the conversion and
      the changes made on VLABS ui3.0 have been mentioned in
-     [[Technical Observations of VLABS ui3.0 web pages]].
+     [[https://github.com/virtual-labs/roadmap-for-integration-engineers/blob/master/ui3.0.org#cross-browser-platform][Technical Observations of VLABS ui3.0 web pages]].
                                                                       
    - Update the new responsive footer in all the html files
      (path- "src/lab" ) as per VLABS ui3.0 landing page from
