@@ -1,0 +1,161 @@
+#+Title: VLABS ui3.0 Tool kit
+#+Date: [25-05-2016],Tue
+#+Author: VLEAD
+
+* Introduction 
+  The purpose of this documentation is to help the
+  integration engineers in :
+  - Converting the labs from VLABS ui1.0([[http://nlp-iiith.virtual-labs.ac.in/][blue-theme]]) to
+    ui3.0([[http://ps-iiith.vlabs.ac.in/][green-theme]])
+
+* Motivation 
+  The motivation behind this document is to define the VLABS
+  ui3.0 template and specify guidelines to be followed
+  during the lab development process.
+
+  This document can be used to 
+  - Category 1- Develop a new lab to use VLABS
+    ui3.0([[http://ps-iiith.vlabs.ac.in/][green-theme]]) by following the lab structure
+    described below.
+  - Category 2- Convert a lab from VLABS ui1.0([[http://nlp-iiith.virtual-labs.ac.in/][blue-theme]])
+    to ui3.0([[http://ps-iiith.vlabs.ac.in/][green-theme]])
+  - Category 3- Convert a lab to VLABS ui3.0([[http://ps-iiith.vlabs.ac.in/][green-theme]]),
+    if the sources are partially updated or the lab is
+    partially converted to ui3.0.
+  
+  Before converting a lab please ensure the category your
+  lab falls into and follow the corresponding instructions.
+
+* VLABS ui3.0 Definition 
+** Category 1-Develop a new lab to use VLABS ui3.0 by following the lab structure described below.
+*** Lab Structure
+   
+   Before you start using VLABS ui3.0 toolkit, you need to
+   understand the structure of the lab.
+   
+   [[./images/ui3.0-lab-structure.png]]
+     
+*** Details of the files of VLABS ui3.0
+   
+   - "themes/green-icon" directory has css, images, js,
+     vendors, search-result.html folders which are related
+     to VLABS ui3.0 version.
+
+   - "src/lab" and "src/lab/exp1" directory has index.html,
+     Introduction.html, Pre-requisites.html, Feedback.html
+     etc., files which are related to the VLABS ui3.0
+     version.
+
+** Category 2- Convert a lab from VLABS ui1.0 to VLABS ui3.0
+    
+   Depending on the current structure of your lab, you need to follow
+   the steps below to convert your lab to VLABS ui3.0 template.
+  
+   - Take the reference of [[http://ps-iiith.vlabs.ac.in/][Problem Solving Lab]] of IIITH,
+     which has been already converted to VLABS ui3.0.
+ 
+   - Make your lab to the above mentioned structure.  Copy
+     themes/green-icon folder into the src directory of your
+     lab.  This folder has all files/folders related to
+     VLABS ui3.0 version.
+
+   - Inside "src/lab" and "src/lab/exp1", add index.html,
+     Introduction.html etc. Modify the content of the
+     templates accordingly as per your labs content.
+
+   - Validate: After making the changes, run your lab in the
+     browser to verify whether it is converted to VLABS
+     ui3.0.
+
+     [[./images/sample-exp.png]]
+
+** Category 3- Convert a lab to VLABS ui3.0, if the sources are partially updated or the lab is partially converted to ui3.0
+   
+   - Initially the analysis process is done on VLABS ui3.0
+     web pages. Based on the analysis, we are done with the
+     conversion process by making the required changes.
+    
+     For the detailed information about the conversion and
+     the changes made on VLABS ui3.0 have been mentioned in
+     [[Technical Observations of VLABS ui3.0 web pages]].
+                                                                      
+   - Update the new responsive footer in all the html files
+     (path- "src/lab" ) as per VLABS ui3.0 landing page from
+     the following link:
+     "https://github.com/vlead/vlabs-web-pages/blob/master/src/index.html"
+
+   - Go to "https://github.com/vlead/vlabs-web-pages/blob/master/src/css/style.css"
+     this path and copy the style.css file to the lab repo
+     you are working on, to this particular path "css" and
+     remove the old "css/style.css" file.  This is because
+     css has been changed.  Like headers, subheaders, logo
+     font size and footer has been changed in the Vlabs
+     ui3.0 landing page. so, all the web pages should be
+     made consistent as per the main page.
+
+   - Go to "https://github.com/vlead/vlabs-web-pages/tree/master/src/images/social"
+     and copy "youtube.png" image to the "images/social"
+     path to the lab repo you are working on.
+
+   - Update the new responsive footer in all the html files (path- "src/lab" )
+     as per VLABS ui3.0 landing page from the following link:
+     "https://github.com/vlead/vlabs-web-pages/blob/master/src/index.html "
+
+   - Go to "https://github.com/vlead/vlabs-web-pages/blob/master/src/css/style.css"
+     this path and copy the style.css file to the lab repo you are working on,
+     to this particular path "css" and remove the old "css/style.css" file.
+     This is because css has been changed.  Like headers, subheaders, logo font
+     size and footer has been changed in the VLABS ui3.0 landing page. so, all
+     the web pages should be made consistent as per the main page.
+
+   - Go to "https://github.com/vlead/vlabs-web-pages/tree/master/src/images/social"
+     and copy "youtube.png" image to the "images/social" path to the lab repo
+     you are working on.
+  
+   - Create green-icon folder under src/themes directory.
+
+   - Now move css, images, js, vendors folders to the following path
+     "src/themes/green-icon".
+
+   - Create index.html file and copy the Introduction.html file content to the
+     index.html file.  Note : If the index.html file already exists with the
+     ui1.0 content, take a backup of that file as index.html.bak and then
+     create new index.html file.
+
+   - Edit the path inside all the html files in the following path "src/lab"
+     and "src/lab/exp1".  Set the path inside the files. In the "src/lab" path
+     remove ../../ inside all the files. Inside the experiments it should be
+     ../ path should be given wherever it is required. This is because makefile
+     is written in a such a way that it copies all the lab content and themes
+     content to the build, when we run the make. So, change the path of the
+     files as per your lab.
+ 
+   - Comment out the "search box" in all html files.
+
+   - Comment out the previous makefile and update with "[[https://github.com/Virtual-Labs/physical-sciences-iiith/blob/master/src/makefile][new makefile]]" .
+   
+   - Finally, run a make and run the lab in the browser to see all the changes,
+     which you have made. Now you should be able to see the lab converted to
+     VLABS ui3.0.
+
+* Technical Observations of VLABS ui3.0 web pages
+** Cross Browser Platform
+   - Tested the lab on various platforms( OS with different browsers).
+  
+   - Used an online cross browser compatibility testing
+     tool([[https://www.browserstack.com/][browserstack]]) to check the responsive of the VLABS
+     ui3.0 web pages on different resolutions.
+
+   - Link to see the responsiveness of labs in [[https://www.browserstack.com/responsive?utm_campaign=onboarding&utm_medium=email&utm_source=welcome][mobiles and tablets.]]
+
+* Conclusion
+   However, the labs linked to the landing page with the
+   VLABS ui1.0 web pages are not responsive at all. So, it
+   is suggested to convert to VLABS ui3.0 for better
+   usability.
+ - After conversion, your lab should match the directory
+   structure as detailed above and should resemble the
+   following [[./images/sample-exp.png]].
+
+*Note*: For any further queries, please post at [[https://github.com/Virtual-Labs/engineers-forum][engineers-forum]] 
+
